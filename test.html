@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Click Counter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element on Click</title>
 </head>
 <body>
+    <button id="createButton">Create New Paragraph</button>
+    <div id="container">
+        <!-- New paragraphs will be added here -->
+    </div>
 
-<button id="clickButton">Click Me!</button>
-<p>Button clicked <span id="countDisplay">0</span> times.</p>
+    <script>
+        document.getElementById('createButton').addEventListener('click', function() {
+            // 1. Create a new paragraph element
+            const newParagraph = document.createElement('p');
 
-<script>
-    // Get references to the HTML elements
-    let clickButton = document.getElementById("clickButton");
-    let countDisplay = document.getElementById("countDisplay");
+            // 2. Add some text content to the new paragraph
+            newParagraph.textContent = 'This is a dynamically created paragraph!';
 
-    // Initialize the click count
-    let clickCount = 0;
-
-    // Add an event listener to the button
-    clickButton.addEventListener("click", function() {
-        // Increment the count
-        clickCount++;
-        // Update the display
-        countDisplay.textContent = clickCount;
-    });
-</script>
-
+            // 3. Append the new paragraph to the container div
+            document.getElementById('container').appendChild(newParagraph);
+        });
+    </script>
 </body>
 </html>
