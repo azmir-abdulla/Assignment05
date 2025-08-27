@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Click Counter</title>
+</head>
+<body>
+
+<button id="clickButton">Click Me!</button>
+<p>Button clicked <span id="countDisplay">0</span> times.</p>
+
+<script>
+    // Get references to the HTML elements
+    let clickButton = document.getElementById("clickButton");
+    let countDisplay = document.getElementById("countDisplay");
+
+    // Initialize the click count
+    let clickCount = 0;
+
+    // Add an event listener to the button
+    clickButton.addEventListener("click", function() {
+        // Increment the count
+        clickCount++;
+        // Update the display
+        countDisplay.textContent = clickCount;
+    });
+</script>
+
+</body>
+</html>
