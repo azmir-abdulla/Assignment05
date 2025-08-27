@@ -44,3 +44,11 @@
   color: white !important;
   border-radius: 8px !important;
 }
+.history-box .right .btn{
+   background-color: #00A63E !important;
+  outline: #00A63E !important;
+  color: white !important;
+  border-radius: 50px !important;
+  padding-left: 36px !important;
+  padding-right: 36px !important;
+}
