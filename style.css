@@ -32,3 +32,15 @@
   font-style: normal;
 }
 
+.button .btn.copy{
+  background-color: #ffffff !important;
+  outline: gray !important;
+  color: gray !important;
+  border-radius: 8px !important;
+}
+.button .btn.call{
+  background-color: #00A63E !important;
+  outline: #00A63E !important;
+  color: white !important;
+  border-radius: 8px !important;
+}
