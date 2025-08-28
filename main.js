@@ -1,6 +1,6 @@
 const heartIcons = document.querySelectorAll(".heart");
 
-heartIcons.forEach((icon) =>
+heartIcons.forEach( function (icon){
   icon.addEventListener("click", function (e) {
     const heartNumber = document.getElementById("heart-number");
     let heartCount = parseInt(heartNumber.innerText);
@@ -10,9 +10,9 @@ heartIcons.forEach((icon) =>
       heartNumber.innerText = heartCount;
     }
   })
-);
+});
 
-const callButtons = document.querySelectorAll("#call-button");
+const callButtons = document.querySelectorAll(".call");
 
 callButtons.forEach(function (button) {
   button.addEventListener("click", function () {
@@ -58,7 +58,7 @@ document.getElementById("clear").addEventListener("click", function () {
   history.innerHTML = "";
 });
 
-const copyButtons = document.querySelectorAll("#copy-button");
+const copyButtons = document.querySelectorAll(".copy");
 
 copyButtons.forEach(function (button) {
   button.addEventListener("click", function () {
