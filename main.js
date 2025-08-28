@@ -22,7 +22,7 @@ callButtons.forEach(function (button) {
     const englishTitle = card.querySelector(".english-title").innerText;
     const hotlineNumber = card.querySelector(".hotline").innerText;
 
-    const callAlert = "📞 " + englishTitle + " " + hotlineNumber;
+    const callAlert = "📞 Calling " + englishTitle + " " + hotlineNumber;
 
     const coins = document.getElementById("coins");
     let coinsCount = parseInt(coins.innerText);
