@@ -16,36 +16,49 @@
 
 <body>
   <!-- Nav Section -->
-  <nav>
-    <div class="navbar">
-      <div class="pl-14 pr-14 pt-6 pb-6 container flex justify-between items-center">
-        <div class="logo flex gap-4 items-center"><img class="w-[50px]" src="./assets/logo.png" alt="">
-          <h4 class="font-bold text-[25px] text-base/5 text-[#006747]">Emergency<br>Service</h4>
+  <nav class="bg-white shadow-md w-full">
+    <div class="container mx-auto px-6 py-4 flex flex-col lg:flex-row lg:justify-between lg:items-center">
+
+      <div class="logo flex items-center justify-center gap-4 mb-4 lg:mb-0">
+        <img class="w-[50px]" src="./assets/logo.png" alt="Logo">
+        <h4 class="font-bold text-[22px] md:text-[25px] leading-tight text-[#006747]">
+          Emergency<br>Service
+        </h4>
+      </div>
+
+      <!-- Right Part -->
+      <div class="right-part flex flex-wrap lg:flex-nowrap gap-4 items-center justify-center">
+
+        <!-- Heart -->
+        <div class="heart flex items-center justify-center gap-2 bg-[#41FF6B1A] rounded-full min-w-[100px] px-3 py-2">
+          <span id="heart-number" class="font-bold text-sm">0</span>
+          <img class="w-[25px] md:w-[30px]" src="./assets/heart.png" alt="">
         </div>
-        <div class="right-part flex gap-6 items-center">
-          <div class="heart flex justify-center items-center gap-4 bg-[#41FF6B1A] rounded-[50px] w-[120px] p-3">
-            <span id="heart-number" class="font-bold text-sm">0 </span> <img class="w-[30px]" src="./assets/heart.png"
-              alt="">
-          </div>
-          <div class="coin flex justify-center items-center gap-4 bg-[#41FF6B1A] rounded-[50px] w-[120px] p-3">
-            <span id="coins" class="font-bold text-sm">100 </span> <img class="w-[30px]" src="./assets/coin.png" alt="">
-          </div>
-          <div class="copy font-bold bg-[#00A63E] text-white rounded-[50px] w-[120px] p-3 text-center"><span
-              id="copies">0
-            </span> Copy</div>
+
+        <!-- Coin -->
+        <div class="coin flex items-center justify-center gap-2 bg-[#41FF6B1A] rounded-full min-w-[100px] px-3 py-2">
+          <span id="coins" class="font-bold text-sm">100</span>
+          <img class="w-[25px] md:w-[30px]" src="./assets/coin.png" alt="">
         </div>
+
+        <!-- Copy -->
+        <div class="copy font-bold bg-[#00A63E] text-white rounded-full min-w-[100px] px-3 py-2 text-center">
+          <span id="copies">0</span> Copy
+        </div>
+
       </div>
     </div>
   </nav>
+
   <!-- Nav Section -->
 
   <!-- Hero Section -->
   <section class="hero">
     <div
       class="w-full flex flex-col justify-center items-center text-center bg-[linear-gradient(to_right,#013223_0%,#006747_50%,#013223_100%)] gap-4 h-[240px]">
-      <img class="w-[92px]" src="./assets/logo-dark.png" alt="">
-      <h1 class="hind-madurai-semibold text-[40px] text-white ">জরুরি সেবা ডিরেক্টরি</h1>
-      <span class="hind-madurai-semibold text-[20px] text-white ">Government Emergency Services at Your Fingertip
+      <img class="w-[92px] " src="./assets/logo-dark.png" alt="">
+      <h1 class="hind-madurai-semibold lg:text-[40px] text-white ">জরুরি সেবা ডিরেক্টরি</h1>
+      <span class="hind-madurai-semibold lg:text-[20px] text-white p-5">Government Emergency Services at Your Fingertip
         – A Project by Government of the People’s Republic of Bangladesh</span>
     </div>
   </section>

@@ -14,7 +14,7 @@ heartIcons.forEach((icon) =>
 
 const callButtons = document.querySelectorAll("#call-button");
 
-callButtons.forEach((button) => {
+callButtons.forEach(function (button) {
   button.addEventListener("click", function () {
     const card = button.closest(".card");
 
@@ -60,7 +60,7 @@ document.getElementById("clear").addEventListener("click", function () {
 
 const copyButtons = document.querySelectorAll("#copy-button");
 
-copyButtons.forEach((button) => {
+copyButtons.forEach(function (button) {
   button.addEventListener("click", function () {
     const card = button.closest(".card");
     const hotlineNumber = card.querySelector(".hotline").innerText;
